@@ -1,0 +1,25 @@
+{
+  "name": "FoodBack",
+  "version": "1.0.0",
+  "description": "Alari did you get it to work\r This is working here Mahmoud. This IS how you spell your name.",
+  "main": "server.js",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Torquelus/REC2018.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Torquelus/REC2018/issues"
+  },
+  "homepage": "https://github.com/Torquelus/REC2018#readme"
+}
