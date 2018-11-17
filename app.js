@@ -55,8 +55,8 @@ app.get('/login', function(req,res){
   res.sendFile(path + 'Login.html');
 });
 
-app.get('/create', function(req, res){
+app.get('/creater', function(req, res){
   res.sendFile(path + 'CreateAccount.html');
 });
 
-app.use(express.static(path + "public/css/style"));
+app.use(express.static(path + "/views"));
