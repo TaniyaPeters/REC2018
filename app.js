@@ -19,13 +19,13 @@ const supporter = require('./routes/supporter.route');
 // Initialise express app
 const app = express();
 
-// TEST CASES
-app.use('/offers', offer);
-app.use('/supporters', supporter);
-
 // Use bodyParser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+
+// TEST CASES
+app.use('/offers', offer);
+app.use('/supporters', supporter);
 
 // Define listening port
 let port = 8080;
