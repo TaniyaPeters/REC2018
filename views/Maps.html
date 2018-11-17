@@ -20,19 +20,7 @@
     <div id="map"></div>
     <li><a href = "/info ">Get Information</a></li>
     <script>
-<<<<<<< HEAD
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        var uluru = {lat: -25.344, lng: 131.036};
-        // The map, centered at Uluru
-        var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 4, center: uluru});
-        // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({position: uluru, map: map});
-=======
 
-results
 // Initialize and add the map
 function initMap() {
   // The location of toronto
@@ -41,57 +29,23 @@ function initMap() {
   // The map, centered at Uluru
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 12, center: uluru});
-  
 
   
       // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
+  
+  var home2 = {lat: 43.610, lng: -79.523199};
+  var marker = new google.maps.Marker({position: home2, map: map});
 }
-infoWindow = new google.maps.InfoWindow;
-
-        // Try HTML5 geolocation.
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
-
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
-            infoWindow.open(map);
-            map.setCenter(pos);
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
-          });
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
-        }
-      
-
-      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
-                              'Error: Your browser doesn\'t support geolocation.');
-        infoWindow.open(map);
->>>>>>> 25e7002aecd8c6d2247c80c4b00a1524bceba737
-      }
     </script>
     <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
     * The key parameter will contain your own API key (which is not needed for this tutorial)
     * The callback parameter executes the initMap() function
-<<<<<<< HEAD
-    -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDttGd62CiNdXM_C4oyU78vJaVcrT4BFdA&callback=initMap">
-=======
     * API CODE IMPORTANT, unique for vfewa
   -->
     <script async defer 
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDttGd62CiNdXM_C4oyU78vJaVcrT4BFdA&callback=initMap">
->>>>>>> 25e7002aecd8c6d2247c80c4b00a1524bceba737
     </script>
   </body>
 </html>
