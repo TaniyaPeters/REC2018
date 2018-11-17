@@ -47,4 +47,16 @@ app.get('/info', function(req,res){
   res.sendFile(path + 'Information.html');
 });
 
-// Database usage
+app.get('/mission', function(req,res){
+  res.sendFile(path + 'MissionStatement.html');
+});
+
+app.get('/login', function(req,res){
+  res.sendFile(path + 'Login.html');
+});
+
+app.get('/create', function(req, res){
+  res.sendFile(path + 'CreateAccount.html');
+});
+
+app.use(express.static(path + "public/css/style"));

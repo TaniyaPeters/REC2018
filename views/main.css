@@ -1,0 +1,60 @@
+body{
+
+  font-weight: 900;
+   font-size: 1.5vw;
+
+   /* Colour */
+   background-color: #E6DCEF;
+}
+
+/* SIDEBAR */
+
+.sideBar{
+    /* Colour and Background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #E6DCEF;
+
+    /* Margins */
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    height: 100%;
+    width: 15%;
+    z-index: 2;
+
+    /* Text */
+    text-align: center;
+    text-indent: 0%;
+    font-size: 1.7vw;
+}
+
+.sideBar h3 {
+    /* Size */
+    font-size: 3vw;
+}
+
+.sideBar ul{
+    /* No Default */
+    padding: 0;
+
+    /* Margins */
+    position: absolute;
+    left: 5%;
+    text-align: left;
+}
+
+.sideBar a{
+    /* Colour */
+    transition: .3s;
+    color: #E6DCEF;
+
+    /* Text */
+    text-decoration: none;
+}
+
+.sideBar a:hover{
+    /*Colour*/
+    transition: .3s;
+    color: black;
+}
