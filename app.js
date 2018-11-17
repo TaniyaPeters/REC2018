@@ -12,8 +12,20 @@ mongoose.Promise = global.Promise;
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error: '));
 
+// Imports routes for offers and supporters
+const offer = require('./routes/offer.route');
+const supporter = require('./routes/supporter.route');
+
 // Initialise express app
 const app = express();
+
+// TEST CASES
+app.use('/offers', offer);
+app.use('/supporters', supporter);
+
+// Use bodyParser
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
 
 // Define listening port
 let port = 8080;
@@ -34,3 +46,5 @@ app.get('/maps', function(req,res){
 app.get('/info', function(req,res){
   res.sendFile(path + 'Information.html');
 });
+
+// Database usage
